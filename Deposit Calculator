@@ -1,0 +1,22 @@
+using System;
+
+
+namespace DepositCalculator
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            double depositSum = double.Parse(Console.ReadLine());
+            int depositTerm = int.Parse(Console.ReadLine());
+            double yearPercent = double.Parse(Console.ReadLine());
+
+
+            double Sum1 = (depositSum * yearPercent/100 );
+            double Sum2 = Sum1 / 12;
+            double Sum3 = depositSum + (depositTerm * Sum2);
+            Console.WriteLine(Sum3);
+            Console.ReadLine();
+        }
+    }
+}
