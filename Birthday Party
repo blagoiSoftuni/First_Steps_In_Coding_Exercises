@@ -1,0 +1,22 @@
+sing System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Birthday_Party
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        
+          {
+            double rentPrice = double.Parse(Console.ReadLine());
+            double cakePrice = rentPrice * 0.20;
+            double drinksPrice = cakePrice - 0.45 * cakePrice;
+            double animationPrice = rentPrice / 3;
+            double finalPrice = rentPrice + cakePrice + drinksPrice + animationPrice;
+            Console.WriteLine(finalPrice);
+        }
+    }
+}
